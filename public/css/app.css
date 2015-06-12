@@ -1,3 +1,45 @@
+.Battle {
+  padding: 0.5em;
+}
+
+.Battle-antagonist {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.Battle-antagonist > div {
+  margin: 10px;
+}
+
+.Battle-player {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.Battle-player > div {
+  margin: 10px;
+}
+
 .Card {
   width: 170px;
   background: #c2ac37;
@@ -84,6 +126,51 @@
   font-size: 0.7em;
 }
 
+.chat {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font: 13px Helvetica, Arial;
+}
+
+.chat form {
+  background: #000;
+  padding: 3px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.chat form input {
+  border: 0;
+  padding: 10px;
+  margin-right: 0.5%;
+}
+
+.chat form button {
+  background: #82e0ff;
+  border: none;
+  padding: 10px;
+  position: absolute;
+}
+
+.chat #messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.chat #messages li {
+  padding: 5px 10px;
+  background: #fff;
+}
+
+.chat #messages li:nth-child(odd) {
+  background: #eee;
+}
+
 .Layout {
   display: -webkit-box;
   display: -moz-box;
@@ -160,6 +247,7 @@
 }
 
 .Layout-phases {
+  background-color: #fff;
   border: 1px solid #800080;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -206,6 +294,13 @@
   justify-content: space-between;
 }
 
+.Phases {
+  background: #fff;
+  border: 5px dashed #f00;
+  position: absolute;
+  right: 0;
+}
+
 .Status {
   background: #ffa500;
 }
@@ -221,55 +316,6 @@
   text-align: center;
   padding: 0.5em;
   margin: 0;
-}
-
-.Phases {
-  background: #fff;
-  border: 5px dashed #f00;
-  position: absolute;
-  right: 0;
-}
-
-.Battle {
-  padding: 0.5em;
-}
-
-.Battle-antagonist {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-}
-
-.Battle-antagonist > div {
-  margin: 10px;
-}
-
-.Battle-player {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -o-box-pack: justify;
-  -ms-flex-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-}
-
-.Battle-player > div {
-  margin: 10px;
 }
 
 body {
